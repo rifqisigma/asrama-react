@@ -15,35 +15,35 @@ export default function Kegiatan() {
             Perayaan Dies Natalis ke-74 Asrama Sukasari hadir dengan serangkaian kegiatan yang mempertemukan kenangan indah masa lalu dengan semangat generasi masa kini.
           </p>
           <ul className="kegiatan-list">
-            <li className="reveal" style={{ transitionDelay: '0.2s' }}>
+            <li className="reveal-item">
               <span className="kl-time">08.00</span>
               <div className="kl-content">
                 <h4>Upacara Pembukaan</h4>
                 <p>Prosesi resmi dan sambutan pimpinan asrama</p>
               </div>
             </li>
-            <li className="reveal" style={{ transitionDelay: '0.4s' }}>
+            <li className="reveal-item">
               <span className="kl-time">09.30</span>
               <div className="kl-content">
                 <h4>Doa & Syukuran</h4>
                 <p>Momen sakral bersama seluruh civitas Sukasari</p>
               </div>
             </li>
-            <li className="reveal" style={{ transitionDelay: '0.6s' }}>
+            <li className="reveal-item">
               <span className="kl-time">11.00</span>
               <div className="kl-content">
                 <h4>Seminar & Talkshow</h4>
                 <p>Berbagi inspirasi bersama alumni terbaik</p>
               </div>
             </li>
-            <li className="reveal" style={{ transitionDelay: '0.8s' }}>
+            <li className="reveal-item">
               <span className="kl-time">13.30</span>
               <div className="kl-content">
                 <h4>Pameran & Pentas Seni</h4>
                 <p>Ekspresi kreativitas dan budaya penghuni asrama</p>
               </div>
             </li>
-            <li className="reveal" style={{ transitionDelay: '1.0s' }}>
+            <li className="reveal-item">
               <span className="kl-time">19.00</span>
               <div className="kl-content">
                 <h4>Malam Puncak & Gala Dinner</h4>

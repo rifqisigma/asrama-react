@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import music from '../assets/music/dummy.mp3';
 export default function MusicPlayer({ isAutoPlay }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
@@ -30,11 +30,11 @@ export default function MusicPlayer({ isAutoPlay }) {
   return (
     <div className={`music-player-fixed ${isAutoPlay ? 'visible' : ''}`}>
       <audio ref={audioRef} loop>
-        <source src="/src/assets/music/dummy.mp3" type="audio/mpeg" />
+        <source src={music} type="audio/mpeg" />
       </audio>
-      
-      <button 
-        className={`music-btn ${isPlaying ? 'playing' : 'paused'}`} 
+
+      <button
+        className={`music-btn ${isPlaying ? 'playing' : 'paused'}`}
         onClick={togglePlay}
         aria-label="Toggle Music"
       >
@@ -50,7 +50,7 @@ export default function MusicPlayer({ isAutoPlay }) {
             </svg>
           )}
         </div>
-        
+
         {/* Animated Sound Bars when playing */}
         {isPlaying && (
           <div className="sound-bars">

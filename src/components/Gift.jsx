@@ -65,7 +65,7 @@ export default function Gift() {
               <polyline points="20 12 20 22 4 22 4 12" /><rect x="2" y="7" width="20" height="5" />
               <line x1="12" y1="22" x2="12" y2="7" />
             </svg>
-            <span>Berikan Kontribusi</span>
+            <span>Berikan Dukungan</span>
           </button>
         </div>
       </section>

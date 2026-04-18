@@ -84,12 +84,12 @@ export default function Gift() {
             <div style={{ flex: 1, maxWidth: '60px', height: '1px', background: 'linear-gradient(to right, var(--orange), transparent)' }}></div>
           </div>
 
-          <div className="modal-badge">· Donasi & Sumbangan ·</div>
-          <h3 className="modal-title">Pilih Opsi<br />Kontribusi Anda</h3>
-          <p className="modal-subtitle">Silakan pilih metode penyaluran kontribusi Anda</p>
+          <div className="modal-badge">· Dukungan ·</div>
+          <h3 className="modal-title">Pilih Opsi<br />Penyaluran</h3>
+          <p className="modal-subtitle">Silakan pilih metode penyaluran dukungan</p>
 
           <div className="donation-options">
-            {['Gopay', 'DANA', 'BCA', 'BNI'].map((amt) => (
+            {['Gopay', 'BRI'].map((amt) => (
               <div
                 key={amt}
                 className={`donation-card ${activeAmount === amt ? 'active' : ''}`}
@@ -107,10 +107,9 @@ export default function Gift() {
             <p>Tujuan Transfer</p>
             <h4>{activeAmount}</h4>
             <span>
-              {activeAmount === 'Gopay' && '081 2345 67890 · A/N Asrama Sukasari'}
-              {activeAmount === 'DANA' && '081 2345 67890 · A/N Asrama Sukasari'}
-              {activeAmount === 'BCA' && '1234567890 · A/N Asrama Sukasari'}
-              {activeAmount === 'BNI' && '1234 5678 9012 · A/N Asrama Sukasari'}
+              {activeAmount === 'BRI' && '0531 0101 6066 506  · A.n Nur Hamdan Agustian'}
+              {activeAmount === 'Gopay' && '085694409676 · A.n Nur Hamdan Agustian'}
+
             </span>
           </div>
 

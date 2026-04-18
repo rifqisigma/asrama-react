@@ -1,4 +1,5 @@
 import React from 'react';
+import dn5 from '../assets/images/dn5.jpg';
 
 export default function Kegiatan() {
   return (
@@ -6,7 +7,7 @@ export default function Kegiatan() {
       <div className="kegiatan-container">
         <div className="kegiatan-text reveal-left">
           <span className="section-label">· Rangkaian Acara ·</span>
-          <h2 className="section-heading">Agenda<br/><em>Perayaan</em></h2>
+          <h2 className="section-heading">Agenda<br /><em>Perayaan</em></h2>
           <div className="ornament-line" style={{ justifyContent: 'flex-start', margin: '20px 0' }}>
             <div className="ornament-diamond"></div>
             <div style={{ flex: 1, maxWidth: '80px', height: '1px', background: 'linear-gradient(to right, var(--gold), transparent)' }}></div>
@@ -16,38 +17,45 @@ export default function Kegiatan() {
           </p>
           <ul className="kegiatan-list">
             <li className="reveal-item">
-              <span className="kl-time">08.00</span>
+              <span className="kl-time">09.00</span>
+              <div className="kl-content">
+                <h4>Open Gate</h4>
+                <p>Awal kebersamaan dimulai di sini</p>
+              </div>
+            </li>
+            <li className="reveal-item">
+              <span className="kl-time">10.00</span>
               <div className="kl-content">
                 <h4>Upacara Pembukaan</h4>
-                <p>Prosesi resmi dan sambutan pimpinan asrama</p>
+                <p>Prosesi resmi dan sambutan-sambutan</p>
               </div>
             </li>
             <li className="reveal-item">
-              <span className="kl-time">09.30</span>
+              <span className="kl-time">10.45</span>
               <div className="kl-content">
-                <h4>Doa & Syukuran</h4>
-                <p>Momen sakral bersama seluruh civitas Sukasari</p>
+                <h4>Penampilan Video dan Puisi</h4>
+                <p>Harmoni makna dalam Video dan Puisi</p>
               </div>
             </li>
             <li className="reveal-item">
-              <span className="kl-time">11.00</span>
+              <span className="kl-time">11.15</span>
               <div className="kl-content">
-                <h4>Seminar & Talkshow</h4>
-                <p>Berbagi inspirasi bersama alumni terbaik</p>
+                <h4>Sharing Session</h4>
+                <p>Berbagi inspirasi bersama alumni</p>
               </div>
             </li>
             <li className="reveal-item">
-              <span className="kl-time">13.30</span>
+              <span className="kl-time">12.20</span>
               <div className="kl-content">
-                <h4>Pameran & Pentas Seni</h4>
-                <p>Ekspresi kreativitas dan budaya penghuni asrama</p>
+                <h4>Penampilan Musikal</h4>
+                <p>Penampilan Hymne Asrama Sukasari dan Musikal</p>
               </div>
             </li>
             <li className="reveal-item">
-              <span className="kl-time">19.00</span>
+              <span className="kl-time">12.40</span>
               <div className="kl-content">
-                <h4>Malam Puncak & Gala Dinner</h4>
-                <p>Perayaan agung menutup rangkaian Dies Natalis</p>
+                <h4>Dokumentasi dan Penutupan</h4>
+                <p>Penutup rangkaian Dies Natalis ke-74 dengan momen kebersamaan</p>
               </div>
             </li>
           </ul>
@@ -55,11 +63,12 @@ export default function Kegiatan() {
 
         <div className="kegiatan-image-wrap reveal-right">
           <div className="img-accent-box-navy"></div>
-          <div className="img-placeholder">
-            <svg className="gi-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1">
-              <rect x="3" y="3" width="18" height="18" rx="0"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-            </svg>
-            <p>[ Foto Kegiatan<br/>Asrama Sukasari ]</p>
+          <div className="kegiatan-img-main">
+            <img
+              className='kegiatan-img'
+              src={dn5}
+              alt="Kegiatan Asrama"
+            />
           </div>
           <div className="img-accent-box-navy-bl"></div>
         </div>

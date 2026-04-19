@@ -26,15 +26,14 @@ export default function Gift() {
   }, [isModalOpen]);
 
   const copyRek = () => {
-    let rek = '081234567890'; // Default DANA/Gopay
-    if (activeAmount === 'BCA') rek = '1234567890';
-    if (activeAmount === 'BNI') rek = '123456789012';
+    let rek = '085694409676'; // Default Gopay
+    if (activeAmount === 'BRI') rek = '053101016066506';
 
     navigator.clipboard.writeText(rek).then(() => {
       setCopyText('✓ Tersalin!');
       setTimeout(() => setCopyText('Salin Nomor Rekening'), 2000);
     }).catch(() => {
-      alert(`Nomor Rekening ${activeAmount}: ${rek}\n· A/N Asrama Sukasari IPB`);
+      alert(`Nomor Rekening ${activeAmount}: ${rek}\n· A.n Nur Hamdan Agustian`);
     });
   };
 
@@ -43,7 +42,7 @@ export default function Gift() {
       <section id="gift">
         <div className="gift-container">
           <div className="gift-icon-wrap reveal">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1d4eb1ff" strokeWidth="1.2">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffffff" strokeWidth="1.2">
               <polyline points="20 12 20 22 4 22 4 12" />
               <rect x="2" y="7" width="20" height="5" />
               <line x1="12" y1="22" x2="12" y2="7" />

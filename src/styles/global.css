@@ -1,9 +1,9 @@
 :root {
   --white: #FDFAF5;
-  --navy: #f39c12;
+  --navy: #c85a00;
   /* Calmer Orange - Pleasing to the eye */
-  --navy-light: #FF8C00;
-  --navy-mid: #e5620e;
+  --navy-light: #ff5e00;
+  --navy-mid: #da5d28;
 
   --orange: #0C1F3F;
   /* IPB Navy Blue */
@@ -12,7 +12,7 @@
 
   --cream: #F5EDD8;
   --cream-dark: #EAD9BB;
-  --gold: #B89240;
+  --gold: #c99422;
   --gold-light: #D4AF5A;
   --text-dark: #1A1208;
 }
@@ -398,15 +398,16 @@ body.cover-active {
 }
 
 .tnl-big-time {
-  font-size: clamp(32px, 5vw, 42px);
+  font-size: clamp(35px, 5.5vw, 46px);
+  font-weight: 700;
   letter-spacing: 2px;
 }
 
 .tnl-medium-unit {
-  font-size: clamp(14px, 2vw, 18px);
-  /* Increased from small to medium */
+  font-size: clamp(16px, 2.2vw, 20px);
+  font-weight: 700;
   letter-spacing: 3px;
-  color: var(--gold-light);
+  color: #FFD700;
   line-height: 1;
 }
 
@@ -431,6 +432,7 @@ body.cover-active {
   text-transform: uppercase;
   opacity: 0;
   line-height: 1.2;
+  text-shadow: 2px 02px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-number {
@@ -444,6 +446,7 @@ body.cover-active {
   line-height: 0.9;
   opacity: 0;
   display: block;
+
 }
 
 .hero-asrama-name {
@@ -454,6 +457,7 @@ body.cover-active {
   letter-spacing: 4px;
   opacity: 0;
   margin-top: 8px;
+  text-shadow: 2px 02px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-ipb {
@@ -466,6 +470,7 @@ body.cover-active {
   text-transform: uppercase;
   opacity: 0;
   margin-top: 8px;
+  text-shadow: 2px 02px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-date-bar {
@@ -481,10 +486,10 @@ body.cover-active {
 
 .hero-date-bar p {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(15px, 2vw, 20px);
+  font-size: clamp(17px, 2vw, 20px);
   font-weight: 600;
   color: var(--white);
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -700,17 +705,18 @@ section {
 
 .tanggal-heading {
   font-family: 'Cinzel', serif;
-  font-size: 11px;
+  font-size: 9px;
+  font-weight: 700;
   letter-spacing: 6px;
-  color: var(--orange-light);
+  color: #FFD700;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .tanggal-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(28px, 5vw, 52px);
-  font-weight: 300;
+  font-size: clamp(25px, 5.5vw, 56px);
+  font-weight: 700;
   color: var(--white);
   margin-bottom: 60px;
 }
@@ -736,16 +742,17 @@ section {
 
 .tnl-label {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: 700;
   letter-spacing: 4px;
-  color: var(--gold-light);
+  color: #FFD700;
   text-transform: uppercase;
 }
 
 .tnl-val {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(24px, 4vw, 32px);
-  font-weight: 300;
+  font-size: clamp(26px, 4.4vw, 35px);
+  font-weight: 700;
   color: var(--white);
   letter-spacing: 2px;
 }
@@ -772,18 +779,18 @@ section {
 
 .tnl-date-big {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(80px, 14vw, 110px);
-  font-weight: 300;
+  font-size: clamp(88px, 15vw, 120px);
+  font-weight: 700;
   color: var(--white);
   line-height: 0.8;
-  /* Reduced line height to push text away */
 }
 
 .tnl-month-small {
   font-family: 'Cinzel', serif;
-  font-size: clamp(12px, 2vw, 15px);
+  font-size: clamp(13px, 2.2vw, 17px);
+  font-weight: 700;
   letter-spacing: 5px;
-  color: var(--gold-light);
+  color: #FFD700;
   position: relative;
   z-index: 2;
 }
@@ -818,27 +825,32 @@ section {
 }
 
 .tanggal-location svg {
-  color: var(--navy);
-  /* Change to Orange */
+  color: var(--navy-light);
   flex-shrink: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .tanggal-location p {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(17px, 2.2vw, 21px);
+  font-family: 'Cinzel', serif;
+  font-size: clamp(12px, 2vw, 15px);
+  font-weight: 700;
+  letter-spacing: 2px;
   color: var(--white);
   text-align: left;
-  line-height: 1.5;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
 }
 
 .tanggal-location p em {
-  color: var(--navy);
-  /* Orange contrast */
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(11px, 1.8vw, 16px);
+  letter-spacing: 1.5px;
+  color: #FFD700;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   display: block;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 /* Countdown */
@@ -848,16 +860,17 @@ section {
 
 .countdown-label {
   font-family: 'Lato', sans-serif;
-  font-size: 10px;
+  font-size: 8px;
+  font-weight: 700;
   letter-spacing: 4px;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .countdown {
   display: flex;
-  gap: 24px;
+  gap: 26px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -866,34 +879,34 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 
 .cd-num {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(36px, 5vw, 56px);
-  font-weight: 300;
-  color: var(--navy);
-  /* Change to Orange */
+  font-size: clamp(16px, 2vw, 32px);
+  font-weight: 400;
+  color: #FFD700;
   line-height: 1;
-  min-width: 80px;
+  min-width: 60px;
   text-align: center;
 }
 
 .cd-lbl {
   font-family: 'Lato', sans-serif;
   font-size: 10px;
+  font-weight: 700;
   letter-spacing: 3px;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.9);
   text-transform: uppercase;
 }
 
 .cd-sep {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 40px;
-  color: rgba(212, 175, 90, 0.3);
+  font-size: 25px;
+  color: var(--white);
   align-self: flex-start;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 /* ===================== SECTION 4 â€“ KEGIATAN ===================== */
@@ -941,23 +954,23 @@ section {
   font-size: 12px;
   color: var(--orange);
   letter-spacing: 1px;
-  min-width: 90px;
+  min-width: 40px;
   padding-top: 3px;
 }
 
 .kl-content h4 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: bold;
   color: var(--navy);
 }
 
 .kl-content p {
   font-family: 'Lato', sans-serif;
   font-size: 13px;
-  color: #666;
+  color: #000000;
   margin-top: 4px;
-  font-weight: 300;
+  font-weight: 350;
 }
 
 .kegiatan-image-wrap {
@@ -1668,7 +1681,9 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .kegiatan-img-main, .img-frame {
+
+  .kegiatan-img-main,
+  .img-frame {
     max-width: 80vw;
   }
-}
+}
